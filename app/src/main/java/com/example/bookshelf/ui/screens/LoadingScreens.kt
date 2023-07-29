@@ -8,12 +8,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.size
+import androidx.compose.ui.Alignment
 import com.example.bookshelf.R
 import androidx.compose.ui.Modifier
 
 @Composable
 fun LoadingScreen(modifier: Modifier = Modifier) {
-    Box(modifier = modifier.fillMaxWidth()) {
+    Box(modifier = modifier.fillMaxWidth(),
+        contentAlignment = Alignment.Center
+    ) {
         Image(
             modifier = Modifier.size(200.dp),
             painter = painterResource(id = R.drawable.loading_img),
